@@ -1,5 +1,5 @@
 {
-    "name": "tp/thinkphp_diy",
+    "name": "tpdiy/thinkphp_diy",
     "description": "基于tp3.2二次开发",
     "type": "framework",
     "keywords": ["framework","thinkphp","ORM"],
