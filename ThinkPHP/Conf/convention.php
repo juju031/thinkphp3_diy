@@ -118,5 +118,12 @@ return  array(
     'CHECK_APP_DIR'         =>  true,       // 是否检查应用目录是否创建
     'FILE_UPLOAD_TYPE'      =>  'Local',    // 文件上传方式
     'DATA_CRYPT_TYPE'       =>  'Think',    // 数据加密方式
-
+    'MAIL_HOST'             =>  'smtp.exmail.qq.com',//smtp服务器的名称
+    'MAIL_SMTPAUTH'         =>  TRUE, //启用smtp认证
+    'MAIL_USERNAME'         =>  'system@test.com',//你的邮箱名
+    'MAIL_FROM'             =>  'system@test.com',//发件人地址
+    'MAIL_FROMNAME'         =>  '测试邮件',//发件人姓名
+    'MAIL_PASSWORD'         =>  '12345',//邮箱密码
+    'MAIL_CHARSET'          =>  'utf-8',//设置邮件编码
+    'MAIL_ISHTML'           =>  TRUE, // 是否HTML格式邮件
 );

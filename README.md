@@ -29,6 +29,18 @@
  	'SESSION_REDIS_AUTH'=>'12345',
  	'SESSION_REDIS_DB' => 15,
  + 增加Redis的入队操作 Q('test',111); 出队操作 echo Q('test');
+
+ # 添加phpmailer邮件发送
+ + 添加配置 
+ 	'MAIL_HOST'             =>  'smtp.exmail.qq.com',//smtp服务器的名称
+    'MAIL_SMTPAUTH'         =>  TRUE, //启用smtp认证
+    'MAIL_USERNAME'         =>  'system@test.com',//你的邮箱名
+    'MAIL_FROM'             =>  'system@test.com',//发件人地址
+    'MAIL_FROMNAME'         =>  '测试邮件',//发件人姓名
+    'MAIL_PASSWORD'         =>  '12345',//邮箱密码
+    'MAIL_CHARSET'          =>  'utf-8',//设置邮件编码
+    'MAIL_ISHTML'           =>  TRUE, // 是否HTML格式邮件
+ + 控制器使用 if(mailto('3417919@qq.com','测试邮件标题','测试邮件正文')){echo '成功';}
  
  # 其它修改
  + dispatch_jump修改至每个模块view目录下的message.html
